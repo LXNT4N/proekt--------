@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color:green;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.wrapper {
+    width: 1280 px;
+    margin: 50 px auto;
+}
+
+header .logo {
+    font-weight: 600;
+    font-size: 45px;
+}
+
+header ul.nav {
+float: right;
+list-style: none;
+}
+
+header ul.nav li {
+display: inline;
+margin-left: 25px;
+cursor: pointer;
+transition: opacity 500ms ease  ;
+}
+
+header ul.nav li:hover {
+    opacity: 0.5;
+}
+
+
+header .presentation {
+    margin: 50px 0;
+    background: url('./img/bg.jpg');
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    position: relative;
+}
+
+header .presentation::after {
+    content: 'Лучший сайт для вас и ваших калорий';
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 300px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white
+}
+
+
+header .presentation::before {
+    content: 'поставьте хороший балл, пожалуйста)';
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 300;
+    color: white
+}
+
+
+main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .item {
+    width: 30%;
+    margin-bottom: 50px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+main .item img {
+    width:100% ;
+    border-radius: 10px 10px 0 0;
+    transition: transform 500ms ease;
+}
+
+main .item img:hover {
+transform: scale(1.05);
+}
+
+main h2, main p, main b {
+    margin: 10px 20 px;
+    color: green;
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
